@@ -12,6 +12,10 @@
 // ==========================================
 
 
+for (let ster = "*"; ster.length < 6; ster += "*")
+{
+        console.log(ster)
+}
 
 
 
@@ -24,9 +28,14 @@
 // loop...
 // klaar!
 // ==========================================
-
-
-
+for (let i = 0; i <= 3; i++)
+{
+    console.log("loop...")
+    if (i === 3)
+    {
+        console.log("klaar!")
+    }
+}
 
 
 // ==========================================
@@ -44,10 +53,20 @@
 // >> 8
 // >> 9
 // ==========================================
+for (let x = 0; x <= 9; x++)
+{
+    if (x >= 3 && x <= 5)
+    {
+        console.log(">" + x)
+    }else if (x >= 6)
+    {
+        console.log(">>" + x)
+    }else
+    {
+        console.log(x)
+    }
 
-
-
-
+}
 
 // ==========================================
 // Opdracht 4 (BONUS): schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
@@ -89,3 +108,20 @@
 
 
 
+for (let a = 1; a <= 100; a++)
+{
+    if (a % 3 === 0 && a % 5 === 0 && a < 100)
+    {
+        console.log("fizzbuzz");
+    }else if (a % 3 === 0 && a < 100)
+    {
+        console.log("fizz");
+    }else if (a % 5 === 0 && a < 100)
+    {
+        console.log("buzz");
+    }else
+    {
+        console.log(a);
+    }
+
+}
