@@ -6,6 +6,11 @@
 
 const names = ["Henk", "Piet", "Fred", "Joop"];
 
+for (let a = 0; a < names.length; a++)
+{
+    console.log(names[a] + "je");
+}
+
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(names) geeft: ["Henk", "Piet", "Fred", "Joop"]
@@ -13,25 +18,32 @@ const names = ["Henk", "Piet", "Fred", "Joop"];
 // console.log(names) geeft: ["Henkje", "Pietje", "Fredje", "Joopje"]
 
 
-
-
-
 // ==========================================
 // Opdracht 2
 // Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
-
 const numbers = [2, 4, 5, 29, 38];
+
+for (let a = 0; a < numbers.length; a++)
+{
+    if (numbers[a] %2 === 0)
+    {
+        let nieuweEven = numbers[a] * 2;
+        console.log(nieuweEven);
+    }else
+    {
+        let nieuweOneven = numbers[a] * 3;
+        console.log(nieuweOneven);
+    }
+
+}
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [2, 4, 5, 29, 38];
 // Na jouw script zie je de aangepaste waardes:
 // console.log(numbers) geeft: [ 4, 8, 15, 87, 76 ];
-
-
-
 
 
 // ==========================================
@@ -42,7 +54,13 @@ const numbers = [2, 4, 5, 29, 38];
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
-const squares = [30, 2, 8, 24, 11];
+const squares = [30, 2, 8, 24, 11,345345,345345345,345345,345345345,645645,4564564,46456456,456456456,456456456,456534534546547657654,543];
+
+for (let a = 0 ; a < squares.length; a++)
+{
+        let nieuwSquares = squares[a] * squares[a] * squares[a];
+        console.log("Het volume van ",squares[a]," is" , nieuwSquares);
+}
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
